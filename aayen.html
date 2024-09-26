@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cuisines</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+        }
+
+        header {
+            background: #333;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        main {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            padding: 20px;
+        }
+
+        .cuisine {
+            background: #f4f4f4;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            margin: 10px;
+            padding: 15px;
+            flex: 1 1 200px;
+            /* Adjusts the size of the sections */
+            min-width: 250px;
+            /* Minimum width to prevent collapsing */
+        }
+
+        .dish {
+            background: #e2e2e2;
+            margin: 5px 0;
+            padding: 10px;
+            border-radius: 3px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 10px;
+            background: #333;
+            color: #fff;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>World Cuisines</h1>
+        <nav>
+            <ul>
+                <li><a href="#italian">Italian</a></li>
+                <li><a href="#mexican">Mexican</a></li>
+                <li><a href="#indian">Indian</a></li>
+                <li><a href="#japanese">Japanese</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="cuisine" id="italian">
+            <h2>Italian Cuisine</h2>
+            <div class="dish">Pasta</div>
+            <div class="dish">Pizza</div>
+            <div class="dish">Risotto</div>
+        </section>
+
+        <section class="cuisine" id="mexican">
+            <h2>Mexican Cuisine</h2>
+            <div class="dish">Tacos</div>
+            <div class="dish">Burritos</div>
+            <div class="dish">Guacamole</div>
+        </section>
+
+        <section class="cuisine" id="indian">
+            <h2>Indian Cuisine</h2>
+            <div class="dish">Curry</div>
+            <div class="dish">Biryani</div>
+            <div class="dish">Samosa</div>
+        </section>
+
+        <section class="cuisine" id="japanese">
+            <h2>Japanese Cuisine</h2>
+            <div class="dish">Sushi</div>
+            <div class="dish">Ramen</div>
+            <div class="dish">Tempura</div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 World Cuisines</p>
+    </footer>
+</body>
+
+</html>
